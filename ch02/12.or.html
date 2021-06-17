@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>or연습</title>
+</head>
+<body>
+    <script>
+        var numberOne = prompt("50미만 숫자를 입력해");        
+        var numberTwo = prompt("50미만 숫자를 입력해");
+
+        if(numberOne < 10 || numberTwo <10){
+            alert("숫자 2개 중에서 최소한 하나는 10 미만입니다.");  /* 한줄일 땐 {}(중괄호) 생략가능하나 2줄 이상은 생략 불가*/
+            alert("최고!")
+        }
+        else if(numberOne > 10 || numberTwo<10){
+            alert("첫번째 입력 10이상이고 두번째는 10이하이다")
+        }
+        else if(numberOne < 10 || numberTwo>10){
+            alert("첫번째 입력 10미만이고 두번째는 10이상이다")
+        }
+        else(numberOne>10 || numberTwo>10)
+            alert("숫자 2개 중에서 10 미만인 수가 없습니다.");
+    </script>
+</body>
+</html>

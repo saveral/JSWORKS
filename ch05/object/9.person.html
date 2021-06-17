@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 정의와 사용</title>
+</head>
+<body>
+    <script>
+        // var animal = ['cow','dog']      //배열객체
+        var person = {                  //사용자 정의 객체 (key : value 쌍으로 이루어짐)
+                    name : '추신수',   /* 쉼표 빠트리면 인식 안되니 조심 */
+                    age : 39,
+                
+                    play : function(){
+                        alert("홈런을 친다!!");
+                }    
+        }
+
+        document.write("이름 : " + person.name + '<br>');  //선언,속성
+        document.write("나이 : " + person.age + '<br>');
+        person.play();
+    </script>
+</body>
+</html>
